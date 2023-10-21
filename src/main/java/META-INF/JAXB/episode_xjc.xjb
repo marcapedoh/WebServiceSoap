@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Ce fichier a été généré par Eclipse Implementation of JAXB, v3.0.0 
+Voir https://eclipse-ee4j.github.io/jaxb-ri 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2023.10.19 à 12:35:27 AM CEST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://com.springbootsoap.allapis">
+    <schemaBindings map="false">
+      <package name="allapis.springbootsoap.com"/>
+    </schemaBindings>
+    <bindings scd="~tns:condiment">
+      <class ref="allapis.springbootsoap.com.Condiment"/>
+    </bindings>
+    <bindings scd="~tns:httpResult">
+      <class ref="allapis.springbootsoap.com.HttpResult"/>
+    </bindings>
+    <bindings scd="~tns:addCondimentRequest">
+      <class ref="allapis.springbootsoap.com.AddCondimentRequest"/>
+    </bindings>
+    <bindings scd="~tns:addCondimentResponse">
+      <class ref="allapis.springbootsoap.com.AddCondimentResponse"/>
+    </bindings>
+    <bindings scd="~tns:getCondimentByIdRequest">
+      <class ref="allapis.springbootsoap.com.GetCondimentByIdRequest"/>
+    </bindings>
+    <bindings scd="~tns:getCondimentByIdResponse">
+      <class ref="allapis.springbootsoap.com.GetCondimentByIdResponse"/>
+    </bindings>
+    <bindings scd="~tns:updateCondimentRequest">
+      <class ref="allapis.springbootsoap.com.UpdateCondimentRequest"/>
+    </bindings>
+    <bindings scd="~tns:updateCondimentResponse">
+      <class ref="allapis.springbootsoap.com.UpdateCondimentResponse"/>
+    </bindings>
+    <bindings scd="~tns:deleteCondimentByIdRequest">
+      <class ref="allapis.springbootsoap.com.DeleteCondimentByIdRequest"/>
+    </bindings>
+    <bindings scd="~tns:deleteCondimentByIdResponse">
+      <class ref="allapis.springbootsoap.com.DeleteCondimentByIdResponse"/>
+    </bindings>
+    <bindings scd="~tns:getCondimentByNomRequest">
+      <class ref="allapis.springbootsoap.com.GetCondimentByNomRequest"/>
+    </bindings>
+    <bindings scd="~tns:getCondimentByNomResponse">
+      <class ref="allapis.springbootsoap.com.GetCondimentByNomResponse"/>
+    </bindings>
+    <bindings scd="~tns:plat">
+      <class ref="allapis.springbootsoap.com.Plat"/>
+    </bindings>
+    <bindings scd="~tns:addPlatRequest">
+      <class ref="allapis.springbootsoap.com.AddPlatRequest"/>
+    </bindings>
+    <bindings scd="~tns:addPlatResponse">
+      <class ref="allapis.springbootsoap.com.AddPlatResponse"/>
+    </bindings>
+    <bindings scd="~tns:getPlatByIdRequest">
+      <class ref="allapis.springbootsoap.com.GetPlatByIdRequest"/>
+    </bindings>
+    <bindings scd="~tns:getPlatByIdResponse">
+      <class ref="allapis.springbootsoap.com.GetPlatByIdResponse"/>
+    </bindings>
+    <bindings scd="~tns:getPlatByNomRequest">
+      <class ref="allapis.springbootsoap.com.GetPlatByNomRequest"/>
+    </bindings>
+    <bindings scd="~tns:getPlatByNomResponse">
+      <class ref="allapis.springbootsoap.com.GetPlatByNomResponse"/>
+    </bindings>
+    <bindings scd="~tns:updatePlatRequest">
+      <class ref="allapis.springbootsoap.com.UpdatePlatRequest"/>
+    </bindings>
+    <bindings scd="~tns:updatePlatResponse">
+      <class ref="allapis.springbootsoap.com.UpdatePlatResponse"/>
+    </bindings>
+    <bindings scd="~tns:deletePlatByIdRequest">
+      <class ref="allapis.springbootsoap.com.DeletePlatByIdRequest"/>
+    </bindings>
+  </bindings>
+</bindings>
+

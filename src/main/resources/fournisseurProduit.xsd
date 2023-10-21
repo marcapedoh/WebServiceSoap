@@ -1,0 +1,203 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://com.springbootsoap.allapis"
+           targetNamespace="http://com.springbootsoap.allapis"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="condiment">
+        <xs:sequence>
+            <xs:element name="condimentId" type="xs:int"/>
+            <xs:element name="nomCondiment" type="xs:string"/>
+            <xs:element name="qauntite" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="httpResult">
+        <xs:sequence>
+            <xs:element name="statut" type="xs:string"/>
+            <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="addCondimentRequest">
+        <xs:sequence>
+            <xs:element name="condiment" type="tns:condiment"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addCondimentResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+            <xs:element name="condiment" type="tns:condiment"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getCondimentByIdRequest">
+        <xs:sequence>
+            <xs:element name="condimentId" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getCondimentByIdResponse">
+        <xs:sequence>
+            <xs:element name="condiment" type="tns:condiment"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="updateCondimentRequest">
+        <xs:sequence>
+            <xs:element name="condiment" type="tns:condiment" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateCondimentResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="deleteCondimentByIdRequest">
+        <xs:sequence>
+            <xs:element name="condimentId" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="deleteCondimentByIdResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getCondimentByNomRequest">
+        <xs:sequence>
+            <xs:element name="condimentNom" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getCondimentByNomResponse">
+        <xs:sequence>
+            <xs:element name="condiment" type="tns:condiment"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="plat">
+        <xs:sequence>
+            <xs:element name="platId" type="xs:int"/>
+            <xs:element name="platNom" type="xs:string"/>
+            <xs:element name="condiment" type="tns:condiment"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addPlatRequest">
+        <xs:sequence>
+            <xs:element name="plat" type="tns:plat" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="addPlatResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+            <xs:element name="plat" type="tns:plat"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getPlatByIdRequest">
+        <xs:sequence>
+            <xs:element name="platId" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPlatByIdResponse">
+        <xs:sequence>
+            <xs:element name="plat" type="tns:plat"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getPlatByNomRequest">
+        <xs:sequence>
+            <xs:element name="platNom" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getPlatByNomResponse">
+        <xs:sequence>
+            <xs:element name="plat" type="tns:plat"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updatePlatRequest">
+        <xs:sequence>
+            <xs:element name="plat" type="tns:plat"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="updatePlatResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="deletePlatByIdRequest">
+        <xs:sequence>
+            <xs:element name="platId" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="deletePlatByIdResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="client">
+        <xs:sequence>
+            <xs:element name="clientId" type="xs:int"/>
+            <xs:element name="nomClient" type="xs:string"/>
+            <xs:element name="prenomClient" type="xs:string"/>
+            <xs:element name="numeroTel" type="xs:string"/>
+            <xs:element name="plat" type="tns:plat"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addClientRequest">
+        <xs:sequence>
+            <xs:element name="client" type="tns:client" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addClientResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+            <xs:element name="client" type="tns:client"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getClientByIdRequest">
+        <xs:sequence>
+            <xs:element name="clientId" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getClientByIdResponse">
+        <xs:sequence>
+            <xs:element name="client" type="tns:client"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getClientByNomRequest">
+        <xs:sequence>
+            <xs:element name="nomclient" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getClientByNomResponse">
+        <xs:sequence>
+            <xs:element name="client" type="tns:client"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateClientRequest">
+        <xs:sequence>
+            <xs:element name="client" type="tns:client"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="updateClientResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+            <xs:element name="client" type="tns:client"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="deleteClientByIdRequest">
+        <xs:sequence>
+            <xs:element name="clientId" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="deleteClientByIdResponse">
+        <xs:sequence>
+            <xs:element name="httpResult" type="tns:httpResult"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
